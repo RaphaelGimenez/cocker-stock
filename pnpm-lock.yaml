@@ -27,6 +27,7 @@ specifiers:
   '@nrwl/web': 15.5.1
   '@nrwl/webpack': 15.5.1
   '@nrwl/workspace': 15.5.1
+  '@testing-library/cypress': ^9.0.0
   '@testing-library/react': 13.4.0
   '@types/jest': 28.1.1
   '@types/node': 18.7.1
@@ -35,7 +36,7 @@ specifiers:
   '@typescript-eslint/eslint-plugin': ^5.36.1
   '@typescript-eslint/parser': ^5.36.1
   babel-jest: 28.1.1
-  cypress: ^12.2.0
+  cypress: ^12.3.0
   eslint: ~8.15.0
   eslint-config-next: 13.1.1
   eslint-config-prettier: 8.1.0
@@ -97,6 +98,7 @@ devDependencies:
   '@nrwl/web': 15.5.1_sq7aerzcpbbvn4p5sujpgvhd3i
   '@nrwl/webpack': 15.5.1_gytr22mbncw625ucqu6gqip6ve
   '@nrwl/workspace': 15.5.1_ru3a6u6i5jfe3w3i7orrmgwxwa
+  '@testing-library/cypress': 9.0.0_cypress@12.3.0
   '@testing-library/react': 13.4.0_biqbaboplfbrettd7655fr4n2y
   '@types/jest': 28.1.1
   '@types/node': 18.7.1
@@ -3717,6 +3719,17 @@ packages:
     resolution: {integrity: sha512-4C7nX/dvpzB7za4Ql9K81xK3HPxCpHMgwTZVyf+9JQ6VUbn9jjZVN7/Nkdz/Ugzs2CSjqnL/UPXroiVBVHUWUw==}
     dependencies:
       tslib: 2.4.1
+
+  /@testing-library/cypress/9.0.0_cypress@12.3.0:
+    resolution: {integrity: sha512-c1XiCGeHGGTWn0LAU12sFUfoX3qfId5gcSE2yHode+vsyHDWraxDPALjVnHd4/Fa3j4KBcc5k++Ccy6A9qnkMA==}
+    engines: {node: '>=12', npm: '>=6'}
+    peerDependencies:
+      cypress: ^12.0.0
+    dependencies:
+      '@babel/runtime': 7.20.7
+      '@testing-library/dom': 8.19.1
+      cypress: 12.3.0
+    dev: true
 
   /@testing-library/dom/8.19.1:
     resolution: {integrity: sha512-P6iIPyYQ+qH8CvGauAqanhVnjrnRe0IZFSYCeGkSRW9q3u8bdVn2NPI+lasFyVsEQn1J/IFmp5Aax41+dAP9wg==}
