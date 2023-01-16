@@ -2,7 +2,9 @@
   "name": "cocker-stock",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "private": true,
   "devDependencies": {
     "@babel/preset-react": "^7.14.5",
