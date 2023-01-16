@@ -53,6 +53,7 @@ specifiers:
   next: 13.1.1
   nx: 15.5.1
   prettier: ^2.6.2
+  prisma: ^4.8.1
   react: 18.2.0
   react-dom: 18.2.0
   react-test-renderer: 18.2.0
@@ -123,6 +124,7 @@ devDependencies:
   lint-staged: 13.1.0
   nx: 15.5.1
   prettier: 2.8.3
+  prisma: 4.8.1
   react-test-renderer: 18.2.0_react@18.2.0
   ts-jest: 28.0.5_eqo52wwcgcnvubpjmpqsyr64ce
   ts-node: 10.9.1_rhpwi32gjip3gggyfzgffz3q2q
@@ -3340,6 +3342,11 @@ packages:
       picocolors: 1.0.0
       tiny-glob: 0.2.9
       tslib: 2.4.1
+    dev: true
+
+  /@prisma/engines/4.8.1:
+    resolution: {integrity: sha512-93tctjNXcIS+i/e552IO6tqw17sX8liivv8WX9lDMCpEEe3ci+nT9F+1oHtAafqruXLepKF80i/D20Mm+ESlOw==}
+    requiresBuild: true
     dev: true
 
   /@radix-ui/number/1.0.0:
@@ -10599,6 +10606,15 @@ packages:
       ansi-regex: 5.0.1
       ansi-styles: 5.2.0
       react-is: 18.2.0
+    dev: true
+
+  /prisma/4.8.1:
+    resolution: {integrity: sha512-ZMLnSjwulIeYfaU1O6/LF6PEJzxN5par5weykxMykS9Z6ara/j76JH3Yo2AH3bgJbPN4Z6NeCK9s5fDkzf33cg==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+    requiresBuild: true
+    dependencies:
+      '@prisma/engines': 4.8.1
     dev: true
 
   /process-nextick-args/2.0.1:
