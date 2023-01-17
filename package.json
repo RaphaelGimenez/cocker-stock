@@ -3,10 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
+    "server:serve": "pnpm exec nx run server:serve",
     "stock-dashboard:test:e2e": "pnpm exec nx run stock-dashboard-e2e:e2e",
     "stock-dashboard:test:e2e:watch": "pnpm exec nx run stock-dashboard-e2e:e2e --watch",
-    "lint:stock-dashboard": "pnpm nx run stock-dashboard:lint",
-    "lint:stock-dashboard-e2e": "pnpm nx run stock-dashboard-e2e:lint",
+    "lint:stock-dashboard": "pnpm exec nx run stock-dashboard:lint",
+    "lint:stock-dashboard-e2e": "pnpm exec nx run stock-dashboard-e2e:lint",
     "supabase:db:reset": "supabase db reset",
     "prepare": "husky install"
   },
@@ -52,6 +53,7 @@
     "jest": "28.1.1",
     "jest-environment-jsdom": "28.1.1",
     "lint-staged": "^13.1.0",
+    "npm-run-all": "^4.1.5",
     "nx": "15.5.1",
     "prettier": "^2.6.2",
     "prisma": "^4.8.1",
