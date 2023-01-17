@@ -3,9 +3,11 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "prepare": "husky install",
+    "stock-dashboard:test:e2e": "pnpm exec nx run stock-dashboard-e2e:e2e",
+    "stock-dashboard:test:e2e:watch": "pnpm exec nx run stock-dashboard-e2e:e2e --watch",
     "lint:stock-dashboard": "pnpm nx run stock-dashboard:lint",
-    "lint:stock-dashboard-e2e": "pnpm nx run stock-dashboard-e2e:lint"
+    "lint:stock-dashboard-e2e": "pnpm nx run stock-dashboard-e2e:lint",
+    "prepare": "husky install"
   },
   "private": true,
   "devDependencies": {
