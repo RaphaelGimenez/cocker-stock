@@ -8,6 +8,9 @@ export function Index() {
       <Link href="/signup">
         <Button component="span">créer un compte</Button>
       </Link>
+      <Link href="/login">
+        <Button component="span">Se connecter</Button>
+      </Link>
     </div>
   );
 }
