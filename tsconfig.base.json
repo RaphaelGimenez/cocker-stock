@@ -15,6 +15,7 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
+      "@cocker-stock/data-access": ["libs/data-access/src/index.ts"],
       "@cocker-stock/stock-dashboard/feature-signup": [
         "libs/stock-dashboard/feature-signup/src/index.ts"
       ]
