@@ -29,6 +29,7 @@ specifiers:
   '@nrwl/web': 15.5.1
   '@nrwl/webpack': 15.5.1
   '@nrwl/workspace': 15.5.1
+  '@supabase/auth-ui-react': ^0.2.6
   '@supabase/supabase-js': ^2.4.0
   '@swc/core': ^1.2.173
   '@swc/jest': 0.2.20
@@ -84,6 +85,7 @@ dependencies:
   '@nestjs/common': 9.2.1_mnr6j2del53muneqly5h4y27ai
   '@nestjs/core': 9.2.1_e6la6qvsclaae2becwjnmfvsuq
   '@nestjs/platform-express': 9.2.1_hjcqpoaebdr7gdo5hgc22hthbe
+  '@supabase/auth-ui-react': 0.2.6_biqbaboplfbrettd7655fr4n2y
   '@supabase/supabase-js': 2.4.0
   '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
   axios: 1.2.3
@@ -3763,6 +3765,33 @@ packages:
     dependencies:
       '@sinonjs/commons': 1.8.6
     dev: true
+
+  /@stitches/core/1.2.8:
+    resolution: {integrity: sha512-Gfkvwk9o9kE9r9XNBmJRfV8zONvXThnm1tcuojL04Uy5uRyqg93DC83lDebl0rocZCfKSjUv+fWYtMQmEDJldg==}
+    dev: false
+
+  /@stitches/react/1.2.8_react@18.2.0:
+    resolution: {integrity: sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==}
+    peerDependencies:
+      react: '>= 16.3.0'
+    dependencies:
+      react: 18.2.0
+    dev: false
+
+  /@supabase/auth-ui-react/0.2.6_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-N2qxgsjxPQZPdDotVumzruj4RHaKNFb9ZRecttMeGOvrYFbMWRQVpWT/rYkTPsRW2phKiGXQlMwha6YxUE+t6Q==}
+    peerDependencies:
+      react: ^16.13.1 || ^17.0.1 || ^18.0.0
+      react-dom: ^16.13.1 || ^17.0.1 || ^18.0.0
+    dependencies:
+      '@stitches/core': 1.2.8
+      '@stitches/react': 1.2.8_react@18.2.0
+      prop-types: 15.8.1
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    optionalDependencies:
+      fsevents: 2.3.2
+    dev: false
 
   /@supabase/functions-js/2.0.0:
     resolution: {integrity: sha512-ozb7bds2yvf5k7NM2ZzUkxvsx4S4i2eRKFSJetdTADV91T65g4gCzEs9L3LUXSrghcGIkUaon03VPzOrFredqg==}
@@ -7768,7 +7797,6 @@ packages:
     engines: {node: ^8.16.0 || ^10.6.0 || >=11.0.0}
     os: [darwin]
     requiresBuild: true
-    dev: true
     optional: true
 
   /function-bind/1.1.1:
