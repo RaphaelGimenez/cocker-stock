@@ -1,13 +1,14 @@
-import { supabase } from '@cocker-stock/data-access';
 import { Auth, ThemeSupa } from '@supabase/auth-ui-react';
+import { useSupabaseClient } from '@supabase/auth-helpers-react';
 
 /* eslint-disable-next-line */
 export interface AuthFormProps {}
 
 export function AuthForm(props: AuthFormProps) {
+  const supabaseClient = useSupabaseClient();
   return (
     <Auth
-      supabaseClient={supabase}
+      supabaseClient={supabaseClient}
       appearance={{ theme: ThemeSupa }}
       view="sign_up"
       localization={{
