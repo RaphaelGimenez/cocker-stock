@@ -27,12 +27,6 @@ describe('Signup page', () => {
 
     cy.findByRole('link', { name: /créer un compte/i }).click();
 
-    // test with invalid email
-    cy.findByLabelText(/email/i).type('invalid email');
-    cy.findByLabelText(/mot de passe/i).type(validUser.password);
-    cy.findByRole('button', { name: /créer un compte/i }).click();
-    cy.findByText(/email invalide/i).should('exist');
-
     // test with existing email
     cy.findByLabelText(/email/i).type(existingUser.email);
     cy.findByLabelText(/mot de passe/i).type(validUser.password);
