@@ -34,6 +34,8 @@ specifiers:
   '@nrwl/web': 15.5.1
   '@nrwl/webpack': 15.5.1
   '@nrwl/workspace': 15.5.1
+  '@supabase/auth-helpers-nextjs': ^0.5.3
+  '@supabase/auth-helpers-react': ^0.3.1
   '@supabase/auth-ui-react': ^0.2.6
   '@supabase/supabase-js': ^2.4.0
   '@swc/core': ^1.2.173
@@ -90,6 +92,8 @@ dependencies:
   '@nestjs/common': 9.2.1_mnr6j2del53muneqly5h4y27ai
   '@nestjs/core': 9.2.1_e6la6qvsclaae2becwjnmfvsuq
   '@nestjs/platform-express': 9.2.1_hjcqpoaebdr7gdo5hgc22hthbe
+  '@supabase/auth-helpers-nextjs': 0.5.3_fjsejuhspb6db5pg2h5ujso754
+  '@supabase/auth-helpers-react': 0.3.1_fjsejuhspb6db5pg2h5ujso754
   '@supabase/auth-ui-react': 0.2.6_ezgqkwgc7inaotckd7rm7zv6cy_biqbaboplfbrettd7655fr4n2y
   '@supabase/supabase-js': 2.4.0
   '@tanstack/react-query': 4.22.0_biqbaboplfbrettd7655fr4n2y
@@ -3781,6 +3785,31 @@ packages:
       react: '>= 16.3.0'
     dependencies:
       react: 18.2.0
+    dev: false
+
+  /@supabase/auth-helpers-nextjs/0.5.3_fjsejuhspb6db5pg2h5ujso754:
+    resolution: {integrity: sha512-imfHiTtV73AgMY/hvfDMHLARRC3ep0Hf+pq5l1zxWakIPQPvWXoad3fqpIE3kl7XJ05vnZMKZP0aMp9RtXAESg==}
+    peerDependencies:
+      '@supabase/supabase-js': ^2.0.4
+    dependencies:
+      '@supabase/auth-helpers-shared': 0.2.4_fjsejuhspb6db5pg2h5ujso754
+      '@supabase/supabase-js': 2.4.0
+    dev: false
+
+  /@supabase/auth-helpers-react/0.3.1_fjsejuhspb6db5pg2h5ujso754:
+    resolution: {integrity: sha512-g3SFv08Dz9FapNif/ZY1b7qKGlMJDyTLSayHBz3kb3FuYxg7aLWgQtydDhm5AGbc0XtvpIBuhGTIOVevwpdosA==}
+    peerDependencies:
+      '@supabase/supabase-js': ^2.0.4
+    dependencies:
+      '@supabase/supabase-js': 2.4.0
+    dev: false
+
+  /@supabase/auth-helpers-shared/0.2.4_fjsejuhspb6db5pg2h5ujso754:
+    resolution: {integrity: sha512-c+hi3N6DhjPTzjXGOokre4gmMZOqt0f1ORrwZwi2s07pk3cbkmn77DwwVtlYMNi3oZNYRQqAfxJu83UzpJrrmg==}
+    peerDependencies:
+      '@supabase/supabase-js': ^2.0.4
+    dependencies:
+      '@supabase/supabase-js': 2.4.0
     dev: false
 
   /@supabase/auth-ui-react/0.2.6_ezgqkwgc7inaotckd7rm7zv6cy_biqbaboplfbrettd7655fr4n2y:
