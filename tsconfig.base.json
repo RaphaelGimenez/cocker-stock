@@ -14,7 +14,11 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@cocker-stock/stock-dashboard/feature-signup": [
+        "libs/stock-dashboard/feature-signup/src/index.ts"
+      ]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
