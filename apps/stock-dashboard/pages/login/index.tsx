@@ -7,7 +7,7 @@ export function Login(props: LoginProps) {
   return (
     <div>
       <h1>Welcome to Login!</h1>
-      <AuthForm />
+      <AuthForm view="sign_in" />
     </div>
   );
 }
