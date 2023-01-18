@@ -18,7 +18,7 @@ describe('Signup page', () => {
 
       cy.findByLabelText(/email/i).type(user.email);
       cy.findByLabelText(/mot de passe/i).type(user.password);
-      cy.findByRole('button', { name: /créer un compte/i }).click();
+      cy.findByRole('button', { name: /s'inscrire/i }).click();
       cy.findByText(/un email de confirmation vous a été envoyé/i).should(
         'exist'
       );
