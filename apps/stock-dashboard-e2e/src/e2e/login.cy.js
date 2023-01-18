@@ -8,7 +8,7 @@ const supabase = createClient(
 describe('Login page', () => {
   beforeEach(() => cy.visit('/'));
   it('should let user login with valid credentials', () => {
-    cy.intercept(/\/auth\/v1\/token/).as('signup');
+    cy.intercept(/\/auth\/v1\/token/).as('login');
 
     const user = {
       email: faker.internet.exampleEmail(),
@@ -28,7 +28,7 @@ describe('Login page', () => {
     cy.findByLabelText(/mot de passe/i).type(user.password);
     cy.findByRole('button', { name: /se connecter/i }).click();
 
-    cy.wait('@signup').its('response.statusCode').should('eq', 200);
+    cy.wait('@login').its('response.statusCode').should('eq', 200);
 
     cy.location('pathname').should('eq', '/dashboard');
   });
