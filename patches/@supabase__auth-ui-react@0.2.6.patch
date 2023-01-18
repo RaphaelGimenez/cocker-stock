@@ -1,0 +1,28 @@
+diff --git a/dist/cjs/src/components/UI/Input.js b/dist/cjs/src/components/UI/Input.js
+index 58fd4828b372e8780c3f03d9e3b5f8f6186af3ec..f23c226c99e2944e1c7c5eab9ea38fafab030c77 100644
+--- a/dist/cjs/src/components/UI/Input.js
++++ b/dist/cjs/src/components/UI/Input.js
+@@ -61,7 +61,8 @@ const Input = _a => {
+   }), appearance);
+   return jsxRuntime.jsx("input", Object.assign({}, props, {
+     style: (_b = appearance === null || appearance === void 0 ? void 0 : appearance.style) === null || _b === void 0 ? void 0 : _b.input,
+-    className: classNames.join(' ')
++    className: classNames.join(' '),
++    id: props.name
+   }, {
+     children: children
+   }));
+diff --git a/dist/esm/src/components/UI/Input.js b/dist/esm/src/components/UI/Input.js
+index 5db874c0fd8cbc2929158e7252d243dda655f5bb..d363c3f2053d26195d97345a9e6b777cdd5a1df8 100644
+--- a/dist/esm/src/components/UI/Input.js
++++ b/dist/esm/src/components/UI/Input.js
+@@ -57,7 +57,8 @@ const Input = _a => {
+   }), appearance);
+   return jsx("input", Object.assign({}, props, {
+     style: (_b = appearance === null || appearance === void 0 ? void 0 : appearance.style) === null || _b === void 0 ? void 0 : _b.input,
+-    className: classNames.join(' ')
++    className: classNames.join(' '),
++    id: props.name
+   }, {
+     children: children
+   }));
