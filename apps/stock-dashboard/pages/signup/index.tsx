@@ -7,7 +7,7 @@ export function Signup(props: SignupProps) {
   return (
     <div>
       <h1>Welcome to Signup!</h1>
-      <AuthForm />
+      <AuthForm view="sign_up" />
     </div>
   );
 }
