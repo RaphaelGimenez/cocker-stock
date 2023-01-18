@@ -1,15 +1,12 @@
-import { useState, useCallback } from 'react';
+import { apiUsers } from '@cocker-stock/data-access';
+import { useMutation } from '@tanstack/react-query';
 
 // eslint-disable-next-line @typescript-eslint/no-empty-interface
-export interface UseSignup {
-  count: number;
-  increment: () => void;
-}
 
-export function useSignup(): UseSignup {
-  const [count, setCount] = useState(0);
-  const increment = useCallback(() => setCount((x) => x + 1), []);
-  return { count, increment };
+export function useSignup() {
+  return useMutation({
+    mutationFn: apiUsers.signup,
+  });
 }
 
 export default useSignup;
