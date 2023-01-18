@@ -1,14 +1,11 @@
-import styles from './auth-form.module.css';
+import { supabase } from '@cocker-stock/data-access';
+import { Auth, ThemeSupa } from '@supabase/auth-ui-react';
 
 /* eslint-disable-next-line */
 export interface AuthFormProps {}
 
 export function AuthForm(props: AuthFormProps) {
-  return (
-    <div className={styles['container']}>
-      <h1>Welcome to AuthForm!</h1>
-    </div>
-  );
+  return <Auth supabaseClient={supabase} appearance={{ theme: ThemeSupa }} />;
 }
 
 export default AuthForm;
