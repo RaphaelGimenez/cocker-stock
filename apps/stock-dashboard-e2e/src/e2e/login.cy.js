@@ -30,6 +30,8 @@ describe('Login page', () => {
 
     cy.wait('@login').its('response.statusCode').should('eq', 200);
 
+    cy.getCookie('supabase-auth-token').should('exist');
+
     cy.location('pathname').should('eq', '/dashboard');
   });
 });
