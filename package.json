@@ -10,6 +10,7 @@
     "lint:stock-dashboard": "pnpm exec nx run stock-dashboard:lint",
     "lint:stock-dashboard-e2e": "pnpm exec nx run stock-dashboard-e2e:lint",
     "supabase:db:reset": "supabase db reset",
+    "prisma:db:push": "prisma db push --skip-generate",
     "prepare": "husky install"
   },
   "private": true,

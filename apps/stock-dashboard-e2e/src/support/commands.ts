@@ -15,6 +15,14 @@ Cypress.Commands.add('login', (email, password) => {
   console.log('Custom command example: Login', email, password);
 });
 
+Cypress.Commands.add(`resetDatabase`, () => {
+  cy.task(`resetDatabase`);
+
+  // wait for the database to reset
+  // eslint-disable-next-line cypress/no-unnecessary-waiting
+  cy.wait(1000);
+});
+
 //
 // -- This is a child command --
 // Cypress.Commands.add("drag", { prevSubject: 'element'}, (subject, options) => { ... })
