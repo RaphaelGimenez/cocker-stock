@@ -6,6 +6,7 @@
     "server:serve": "pnpm exec nx run server:serve",
     "stock-dashboard:test:e2e": "pnpm exec nx run stock-dashboard-e2e:e2e",
     "stock-dashboard:test:e2e:watch": "pnpm exec nx run stock-dashboard-e2e:e2e --watch",
+    "test:e2e:watch": "run-p server:serve stock-dashboard:test:e2e:watch",
     "lint:stock-dashboard": "pnpm exec nx run stock-dashboard:lint",
     "lint:stock-dashboard-e2e": "pnpm exec nx run stock-dashboard-e2e:lint",
     "supabase:db:reset": "supabase db reset",
